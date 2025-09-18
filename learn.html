@@ -1,0 +1,132 @@
+
+
+
+
+## 🛍️ Product Card Styling Assignment
+
+In this assignment, you'll style a product card component using CSS. You'll begin with the provided boilerplate and apply styles to various sections such as the product image, product info, price, and a call-to-action button.
+
+Your goal is to match the design requirements **precisely**, so that the provided test cases pass successfully.
+
+---
+
+### 📂 Files Provided
+
+* `index.html` — HTML markup of the product card
+* `styles.css` — Your task is to complete the styles here
+* `tests.js` — Jasmine test cases to verify your CSS implementation
+
+---
+
+### 🎯 Styling Goals
+
+You are required to style the product card and its elements using specific CSS rules.
+
+Each rule must match the test expectations **exactly**, including **dimensions, colors, font weights, and spacing**.
+
+---
+
+### 🔍 Detailed Requirements
+
+#### 🔷 `.product-card`
+
+* `width`: `300px`
+* `border`: `1px solid #ccc`
+* `border-radius`: non-zero (recommended: `10px`)
+* `margin`: non-zero (recommended: `20px`)
+* `padding`: non-zero (recommended: `16px`)
+* **Note:** Use `box-sizing: border-box` to ensure layout consistency
+
+#### 🔷 `.product-card img`
+
+* `width`: `100%`
+* **Final rendered width must equal** `300px` (to match the card's width)
+* `max-width`: `300px` (helps meet test precision)
+* `border-radius`: non-zero (recommended: `10px`)
+* `display`: `block` (prevents whitespace bugs)
+
+#### 🔷 `.product-info`
+
+* `padding`: any **non-zero** value (e.g., `12px`)
+
+✅ **Test will check**:
+
+```js
+parseInt(padding) > 0
+```
+
+#### 🔷 `.product-info h2`
+
+* `font-size`: recommended `20px`
+* `margin-bottom`: any value (recommended `8px`)
+
+#### 🔷 `.product-info .price`
+
+* `color`: must be **green**, which equals `rgb(0, 128, 0)`
+* `font-weight`: must be **bold**. Any of:
+
+  * `bold`
+  * `700`, `800`, or `900`
+* `margin-bottom`: recommended `12px`
+
+✅ **Test will check**:
+
+```js
+expect(color).toBe('rgb(0, 128, 0)')
+expect(font-weight).toMatch(/bold|700|800|900/)
+```
+
+#### 🔷 `.product-info button`
+
+* `background-color`: must be `#4CAF50`, which equals `rgb(76, 175, 80)`
+* `color`: `white`
+* `border`: `none`
+* `padding`: vertical padding must be **greater than 5px** (e.g., `10px 16px`)
+* `font-size`: recommended `16px`
+* `border-radius`: non-zero (e.g., `6px`)
+* `cursor`: `pointer`
+
+✅ **Test will check**:
+
+```js
+expect(background-color).toBe('rgb(76, 175, 80)')
+parseInt(padding-top) > 5
+border-radius > 0
+```
+
+---
+
+### ✅ Completion Checklist
+
+* [ ] `.product-card` has proper width, border, and padding
+* [ ] Image inside `.product-card` is exactly 300px wide and has border-radius
+* [ ] `.product-info` has padding
+* [ ] `.price` text is green (`rgb(0, 128, 0)`) and bold
+* [ ] Button has background color `#4CAF50` (`rgb(76, 175, 80)`), padding > 5px, and rounded corners
+
+---
+
+### 🧪 How to Run Tests
+
+Open the HTML file in a browser. The test runner at the bottom will automatically evaluate your CSS.
+
+* Green = pass
+* Red = fail — check console for details
+
+---
+
+### 💡 Tips
+
+* When working with colors, remember CSS names like `green` are converted to RGB (`rgb(0, 128, 0)`)
+* Always use `px` values for dimensions unless instructed otherwise
+* Use `box-sizing: border-box` to make layouts predictable   </header>
+<ul>
+<li>Thick crust of Chicago-style</li>
+<li> Thin crust of New York-style</li>
+<li> Neapolitan and Margherita pizzas</li> 
+<li> Quattro Formaggi </li>
+<li> Indian-inspired Tandoori Paneer.</li>  
+<li>Margherita 2.0</li>
+<li>Cheesy Code Combo</li>
+<li>Bug-Free Pepperoni</li>
+</ul>   
